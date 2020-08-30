@@ -25,23 +25,6 @@
                 </span>
             </div>
         </div>
-        <!-- GRID MANAGEMENT BUTTONS -->
-        <!-- TODOS GRID do we need ag-grid? -->
-        <nav class="level">
-            <div class="table-action-icons level-left">
-                <p class="level-item" @click="toggleCompletedTodos(true)">
-                    <span class="icon is-small"><img src="@/assets/svg/archive.svg" alt="Archive completed todos"/></span>
-                </p>
-            </div>
-            <div class="table-action-icons level-right">
-                <p class="level-item">
-                    <span class="icon is-small"><img src="@/assets/svg/tags.svg" alt="Filter by tag"/></span>
-                </p>
-                <p class="level-item" @click="toggleActionItems">
-                    <span class="icon is-small"><img src="@/assets/svg/action-toggle.svg" alt="Toggle action icons"/></span>
-                </p>
-            </div>
-        </nav>
         <table class="table is-narrow">
             <thead>
                 <tr>
@@ -78,6 +61,23 @@
                 </TodoItem>
             </draggable>
         </table>
+        <!-- GRID MANAGEMENT BUTTONS -->
+        <!-- TODOS GRID do we need ag-grid? -->
+        <nav class="level">
+            <div class="table-action-icons level-left">
+                <p class="level-item" @click="toggleCompletedTodos(true)">
+                    <span class="icon is-small"><img src="@/assets/svg/archive.svg" alt="Archive completed todos"/></span>
+                </p>
+            </div>
+            <div class="table-action-icons level-right">
+                <p class="level-item">
+                    <span class="icon is-small"><img src="@/assets/svg/tags.svg" alt="Filter by tag"/></span>
+                </p>
+                <p class="level-item" @click="toggleActionItems">
+                    <span class="icon is-small"><img src="@/assets/svg/action-toggle.svg" alt="Toggle action icons"/></span>
+                </p>
+            </div>
+        </nav>
     </div>
 </template>
 
