@@ -1,0 +1,7 @@
+node_modules
+api/env/*
+dist/*
+capicon/*
+coverage/*
+package-lock.json
+yarn.lock
